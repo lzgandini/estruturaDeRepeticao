@@ -5,8 +5,12 @@ b) Altere o programa anterior para mostrar no final a soma dos números."""
 import random
 
 # a)
-min = int(input("Digite o MENOR número do intervalo de números inteiros inteiro: "))
-max = int(input("Digite o MAIOR número do intervalo de números inteiros inteiro: "))
+numero1 = int(input("Digite um número inteiro: "))
+numero2 = int(input("Digite outro número inteiro: "))
+numeros = [numero1, numero2]
+
+min = min(numeros)
+max = max(numeros)
 
 numeroRandomico = random.randint(min, max)
 
