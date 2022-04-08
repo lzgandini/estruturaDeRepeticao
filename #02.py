@@ -9,4 +9,4 @@ while nome == senha:
     nome = input("Informe seu nome de usuário: ")
     senha = input("Informe sua senha (diferente do nome): ")
 
-print(f"\nObrigada {nome.capitalize()}!")
+print(f"\nObrigada {nome}!")
