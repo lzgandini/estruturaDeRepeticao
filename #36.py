@@ -10,14 +10,19 @@ Vou montar a tabuada de 5 começando em 4 e terminando em 7:
 5 X 4 = 20
 5 X 5 = 25
 5 X 6 = 30
-5 X 7 = 35"""
+5 X 7 = 35
+
+Obs: Você deve verificar se o usuário não digitou o final menor que o inicial."""
 
 numero = int(input("Montar a tabuada de: "))
 inicio = int(input("Começar por: "))
 final = int(input("Terminar em: "))
 indice = inicio
 
-print(f"\nVou montar a tabuada de {numero} começando em {inicio} e terminando em {final}:")
+if final >= inicio:
+    print(f"\nVou montar a tabuada de {numero} começando em {inicio} e terminando em {final}:")
 
-for indice in range(inicio, (final + 1)):
-    print(f"{numero} X {indice} = {numero * indice}")
+    for indice in range(inicio, (final + 1)):
+        print(f"{numero} X {indice} = {numero * indice}")
+else:
+    print("Números inválidos.")
