@@ -4,7 +4,7 @@ o número do aluno mais baixo, junto com suas alturas."""
 
 dados = {}
 
-for indice in range(3):
+for indice in range(10):
     numero = int(input("Número do aluno: "))
     altura = int(input("Altura em centímetros: "))
     dados[numero] = altura
